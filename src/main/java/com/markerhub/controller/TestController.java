@@ -19,8 +19,6 @@ public class TestController {
     @ResponseBody
     @GetMapping("/test")
     public  Object test(){
-        List<User> userList = userRepository.findAll();
-        userRepository.deleteAll();
         List<User> userListAfterDelete = userRepository.findAll();
         return userListAfterDelete;
     }
