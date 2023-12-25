@@ -1,5 +1,6 @@
 package com.markerhub.enity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -18,6 +19,7 @@ public class User implements Serializable {
     private String avatar;
 
     //微信用户身份id
+    @JsonIgnore
     private String openId;
 
     //上次登录
