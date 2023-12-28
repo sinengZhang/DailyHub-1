@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
+import java.util.Optional;
 
 @Controller
 public class TestController {
@@ -23,6 +24,12 @@ public class TestController {
         return userList;
     }
 
+    @GetMapping("/testException")
+    public Object testException() {
+        User user = userRepository.findById(100L).get();
+        List<User> userList = userRepository.findAll();
+        return userList;
+    }
 
     @GetMapping("/ftl")
     public String ftl(HttpServletRequest request) {

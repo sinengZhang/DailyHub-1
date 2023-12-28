@@ -1,4 +1,4 @@
-package com.markerhub.base.lang.Result;
+package lang;
 
 import lombok.Data;
 
