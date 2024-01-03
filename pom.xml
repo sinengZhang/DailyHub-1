@@ -14,7 +14,7 @@
     <name>dailyhub</name>
     <description>公众号：MarkerHub</description>
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>17</java.version>
     </properties>
     <dependencies>
         <dependency>
