@@ -13,3 +13,8 @@ spring:
     suffix: .ftl
     settings:
       classic_compatible: true
+  redis:
+    database: 0
+    port: 6379
+    password: 1234
+    host: localhost

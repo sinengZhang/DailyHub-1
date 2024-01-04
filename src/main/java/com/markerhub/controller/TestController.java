@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
-import java.util.Optional;
 
 @Controller
 public class TestController {
@@ -20,7 +19,7 @@ public class TestController {
     @ResponseBody
     @GetMapping("/test")
     public Object test() {
-        List<User> userList = userRepository.findAll();
+         List<User> userList = userRepository.findAll();
         return userList;
     }
 
